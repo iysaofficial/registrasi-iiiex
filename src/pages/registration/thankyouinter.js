@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
 function Thankyouinter() {
@@ -13,36 +14,50 @@ function Thankyouinter() {
     <section className="thankyou">
       <div>
         <h1>Thank You for Registering!</h1>
-        <p>We appreciate your participation and look forward to your engagement.</p>
+        <p>
+          We appreciate your participation and look forward to your engagement.
+        </p>
 
         <table className="thankyou-table">
           <tbody>
             <tr>
-              <td><strong>Team Member</strong></td>
+              <td>
+                <strong>Team Member</strong>
+              </td>
               <td>{fullName}</td>
             </tr>
             <tr>
-              <td><strong>School Name</strong></td>
+              <td>
+                <strong>School Name</strong>
+              </td>
               <td>{schoolName}</td>
             </tr>
             <tr>
-              <td><strong>Project Title</strong></td>
+              <td>
+                <strong>Project Title</strong>
+              </td>
               <td>{projectTitle}</td>
             </tr>
             <tr>
-              <td><strong>Competition Category</strong></td>
+              <td>
+                <strong>Competition Category</strong>
+              </td>
               <td>{category}</td>
             </tr>
           </tbody>
         </table>
 
         <p>
-          <strong>*If the data appears, take a screenshot of this page as proof of successful registration</strong>
+          <strong>
+            *If the data appears, take a screenshot of this page as proof of
+            successful registration
+          </strong>
         </p>
-
-        <a href="/" className="btn btn-action">
-          Back to Registration Menu
-        </a>
+        <Link href="/" >
+          <a className="btn btn-action">
+            Back to Registration Menu
+          </a>
+        </Link>
       </div>
     </section>
   );

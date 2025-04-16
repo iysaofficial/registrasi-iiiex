@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,20 +23,20 @@ export default function Home() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a
-              href="/registration/homeindo"
-              className="btn btn-action text-center me-lg-5 m-2"
-            >
-              Indonesia Participant{" "}
-              <i className="fa-solid fa-earth-americas"></i>
-            </a>
-            <a
-              href="/registration/homeinter"
-              className="btn btn-action text-center me-lg-5 m-2"
-            >
-              International Participant{" "}
-              <i className="fa-solid fa-earth-americas"></i>
-            </a>
+            <Link href="/registration/homeindo">
+              <a
+                className="btn btn-action text-center me-lg-5 m-2"
+              >
+                Indonesia Participant{" "}
+                <i className="fa-solid fa-earth-americas"></i>
+              </a>
+            </Link>
+            <Link href="/registration/homeinter">
+              <a className="btn btn-action text-center me-lg-5 m-2">
+                International Participant{" "}
+                <i className="fa-solid fa-earth-americas"></i>
+              </a>
+            </Link>
             <br />
             <br />
             <a href="https://IIIEX.or.id/">

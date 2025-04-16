@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
 function ThankYouIndo() {
@@ -39,10 +40,11 @@ function ThankYouIndo() {
         <p>
           <strong>*Jika data muncul, tangkap layar halaman ini sebagai bukti pendaftaran berhasil</strong>
         </p>
-
-        <a href="/" className="btn btn-action">
+        <Link href="/">
+        <a className="btn btn-action">
           Kembali ke menu pendaftaran
         </a>
+        </Link>
       </div>
     </section>
   );
