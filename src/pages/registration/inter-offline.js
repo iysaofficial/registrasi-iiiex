@@ -147,7 +147,7 @@ export default function InternationalOffline() {
       <section className="registration-section">
         <div class="container">
           <div class="content">
-            <div class="sub">FORM REGISTRATION</div>
+            <div class="sub">REGISTRATION FORM</div>
             <h1 class="garis-bawah"></h1>
             <br />
             <br />
@@ -570,22 +570,18 @@ export default function InternationalOffline() {
                     required
                   >
                     <option value="">--Choose Categories--</option>
-                    <option value="Agriculture & Aquaculture">Agriculture & Aquaculture</option>
+                    <option value="Agriculture & Aquaculture">
+                      Agriculture & Aquaculture
+                    </option>
                     <option value="Social Science">Social Science</option>
                     <option value="Energy">Energy</option>
-                    <option value="Life Science">
-                      Life Science
+                    <option value="Life Science">Life Science</option>
+                    <option value="Biotechnology">Biotechnology</option>
+                    <option value="Physic and Engineering">
+                      Physic and Engineering
                     </option>
-                    <option value="Biotechnology">
-                      Biotechnology
-                    </option>
-                    <option value="Physic and Engineering">Physic and Engineering</option>
-                    <option value="Chemistry">
-                      Chemistry
-                    </option>
-                    <option value="Environment">
-                      Environment
-                    </option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Environment">Environment</option>
                     <option value="Food Science">Food Science</option>
                     <option value="Electronics and IoT">
                       Electronics and IoT
@@ -683,7 +679,7 @@ export default function InternationalOffline() {
                     <option value="IYSA Email">IYSA Email</option>
                     <option value="IIIEX Email">IIIEX Email</option>
                     <option value="Previous Event">Previous Event</option>
-                    <option value="Others">Lainnya</option>
+                    <option value="Others">Others</option>
                   </select>
                 </div>
               </div>

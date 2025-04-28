@@ -41,7 +41,7 @@ function IndonesiaOffline() {
   const handleCategoryChange = (e) => {
     const value = e.target.value;
     setSelectedCategory(value);
-    
+
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "Indonesia International Invention Expo - Offline Competition":
@@ -63,50 +63,50 @@ function IndonesiaOffline() {
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbzTESDQVzLTF-Zh_8O-MUtO13eNJnKjsT-c3oKciggpqsrX2MDlqSj4aFZ0fKhPZxGkig/exec";
 
-    useEffect(() => {
-      const form = document.forms["regist-form"];
-  
-      if (form) {
-        const handleSubmit = async (e) => {
-          e.preventDefault();
-          setShowModal(true);
-          setCanClick(false);
-          setCountdown(5); // Set ulang countdown saat modal muncul
-  
-          let count = 5;
-          const interval = setInterval(() => {
-            count -= 1;
-            setCountdown(count);
-  
-            if (count <= 1) {
-              clearInterval(interval); // Hentikan countdown di angka 1
-              setCanClick(true);
-            }
-          }, 1000);
-        };
-  
-        form.addEventListener("submit", handleSubmit);
-        return () => {
-          form.removeEventListener("submit", handleSubmit);
-        };
-      }
-    }, []);
+  useEffect(() => {
+    const form = document.forms["regist-form"];
+
+    if (form) {
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        setShowModal(true);
+        setCanClick(false);
+        setCountdown(5); // Set ulang countdown saat modal muncul
+
+        let count = 5;
+        const interval = setInterval(() => {
+          count -= 1;
+          setCountdown(count);
+
+          if (count <= 1) {
+            clearInterval(interval); // Hentikan countdown di angka 1
+            setCanClick(true);
+          }
+        }, 1000);
+      };
+
+      form.addEventListener("submit", handleSubmit);
+      return () => {
+        form.removeEventListener("submit", handleSubmit);
+      };
+    }
+  }, []);
   const handleConfirmSubmit = async () => {
     setShowModal(false); // Tutup modal
     const form = document.forms["regist-form"];
-  
+
     if (!form) return;
-  
+
     setIsLoading(true);
     try {
       const response = await fetch(scriptURL, {
         method: "POST",
         body: new FormData(form),
       });
-  
+
       if (response.ok) {
         setStatusMessage("Data berhasil dikirim!");
-        
+
         // Ambil data sebelum reset
         const formData = {
           namaLengkap: selectedMaxNamaLengkap,
@@ -114,11 +114,13 @@ function IndonesiaOffline() {
           category: selectedCategory,
           namasekolah: selectedNamaSekolah,
         };
-  
+
         form.reset();
         setTimeout(() => {
           router.push(
-            `/registration/thankyouindo?namaLengkap=${encodeURIComponent(selectedMaxNamaLengkap)}
+            `/registration/thankyouindo?namaLengkap=${encodeURIComponent(
+              selectedMaxNamaLengkap
+            )}
             &projectTitle=${encodeURIComponent(selectedMaxProject)}
             &category=${encodeURIComponent(selectedCategory)}
             &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`
@@ -537,22 +539,18 @@ function IndonesiaOffline() {
                     required
                   >
                     <option value="">--Pilih Kategori--</option>
-                    <option value="Agriculture & Aquaculture">Agriculture & Aquaculture</option>
+                    <option value="Agriculture & Aquaculture">
+                      Agriculture & Aquaculture
+                    </option>
                     <option value="Social Science">Social Science</option>
                     <option value="Energy">Energy</option>
-                    <option value="Life Science">
-                      Life Science
+                    <option value="Life Science">Life Science</option>
+                    <option value="Biotechnology">Biotechnology</option>
+                    <option value="Physic and Engineering">
+                      Physic and Engineering
                     </option>
-                    <option value="Biotechnology">
-                      Biotechnology
-                    </option>
-                    <option value="Physic and Engineering">Physic and Engineering</option>
-                    <option value="Chemistry">
-                      Chemistry
-                    </option>
-                    <option value="Environment">
-                      Environment
-                    </option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Environment">Environment</option>
                     <option value="Food Science">Food Science</option>
                     <option value="Electronics and IoT">
                       Electronics and IoT

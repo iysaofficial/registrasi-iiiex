@@ -151,7 +151,7 @@ export default function InternationalOnline() {
       <section className="registration-section">
         <div class="container">
           <div class="content">
-            <div class="sub">FORM REGISTRATION</div>
+            <div class="sub">REGISTRATION FORM</div>
             <h1 class="garis-bawah"></h1>
             <br />
             <br />
@@ -703,7 +703,7 @@ export default function InternationalOnline() {
                     <option value="IYSA Email">IYSA Email</option>
                     <option value="IIIEX Email">IIIEX Email</option>
                     <option value="Previous Event">Previous Event</option>
-                    <option value="Others">Lainnya</option>
+                    <option value="Others">Others</option>
                   </select>
                 </div>
               </div>
