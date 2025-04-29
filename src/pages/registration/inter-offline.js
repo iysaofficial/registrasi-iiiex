@@ -460,6 +460,7 @@ export default function InternationalOffline() {
                       Senior High School
                     </option>
                     <option value="University">University</option>
+                    <option value="Public">Public</option>
                   </select>
                 </div>
                 <div class="input-box">

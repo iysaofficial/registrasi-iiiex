@@ -412,6 +412,7 @@ function IndonesiaOffline() {
                       Sekolah Menengah Atas
                     </option>
                     <option value="Universitas">Universitas</option>
+                    <option value="Publik/Umum">Publik/Umum</option>
                   </select>
                 </div>
                 <div className="input-box">
