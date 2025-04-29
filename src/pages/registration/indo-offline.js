@@ -232,7 +232,7 @@ function IndonesiaOffline() {
                     onChange={handleCategoryChange}
                     required
                   >
-                    {/* <option value="">--Pilih Kategori Kompetisi--</option> */}
+                    <option value="">--Pilih Kategori Kompetisi--</option>
                     <option value="Indonesia International Invention Expo - Offline Competition">
                       Offline Competition
                     </option>
