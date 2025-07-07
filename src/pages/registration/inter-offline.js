@@ -65,7 +65,8 @@ export default function InternationalOffline() {
   }, [router]);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbzvoCdWraeFvQpmRAITehwp1xGtbT6ElRlts0njxhCiX_ud2LlT7AgkROp_dYsul1yEQg/exec";
+    "";
+    // "https://script.google.com/macros/s/AKfycbzvoCdWraeFvQpmRAITehwp1xGtbT6ElRlts0njxhCiX_ud2LlT7AgkROp_dYsul1yEQg/exec";
 
     useEffect(() => {
       const form = document.forms["regist-form"];
@@ -684,9 +685,9 @@ export default function InternationalOffline() {
                   </select>
                 </div>
               </div>
-              <div class="button">
+              {/* <div class="button">
                 <input type="submit" value="SUBMIT FORM" />
-              </div>
+              </div> */}
             </form>
 
             {/* Loader dan Status Message */}

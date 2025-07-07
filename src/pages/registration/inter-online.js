@@ -69,7 +69,8 @@ export default function InternationalOnline() {
   }, [router]);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbwDKWdbhvZFYd7DGHgj-M5TfP-wKs0MbMLMqFeMKsZTEz_9ufFS6NrZOrW5f4BT7rjMvA/exec";
+    "";
+    // "https://script.google.com/macros/s/AKfycbwDKWdbhvZFYd7DGHgj-M5TfP-wKs0MbMLMqFeMKsZTEz_9ufFS6NrZOrW5f4BT7rjMvA/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];

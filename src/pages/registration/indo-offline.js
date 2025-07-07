@@ -61,8 +61,9 @@ function IndonesiaOffline() {
   }, [router]);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbzTESDQVzLTF-Zh_8O-MUtO13eNJnKjsT-c3oKciggpqsrX2MDlqSj4aFZ0fKhPZxGkig/exec";
-
+  "";
+  // "https://script.google.com/macros/s/AKfycbzTESDQVzLTF-Zh_8O-MUtO13eNJnKjsT-c3oKciggpqsrX2MDlqSj4aFZ0fKhPZxGkig/exec";
+  
   useEffect(() => {
     const form = document.forms["regist-form"];
 
@@ -673,9 +674,9 @@ function IndonesiaOffline() {
               {/* GENERAL INFORMATION END */}
               {/* GENERAL INFORMATION END */}
 
-              <div className="button">
+              {/* <div className="button">
                 <input type="submit" value="KIRIM" />
-              </div>
+              </div> */}
             </form>
             {/* Loader dan Status Message */}
             {isLoading && (
