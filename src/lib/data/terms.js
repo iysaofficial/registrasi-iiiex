@@ -93,7 +93,7 @@ export const internationalOnlineTerms = (
       Participants must use titles and complete papers that correspond to the category they are participating in. (For participants attending international events, English must be used for all requirements).
     </li>
     <li>
-      The committee's decision regarding this matter is final and cannot be contested.
+      The committee&apos;s decision regarding this matter is final and cannot be contested.
     </li>
   </>
 );
@@ -126,7 +126,7 @@ export const internationalOfflineTerms = (
       For offline participants who are entitled to the Best booth, Best Poster, Best Presentation, Best Project, cash, semi grand award, and grand award prizes but cannot attend the prize distribution ceremony, the prizes concerned will be declared forfeited.
     </li>
     <li>
-      The committee's decision regarding this matter is final and cannot be contested.
+      The committee&apos;s decision regarding this matter is final and cannot be contested.
     </li>
   </>
 );
