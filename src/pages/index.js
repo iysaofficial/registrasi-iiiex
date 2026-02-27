@@ -23,27 +23,21 @@ export default function Home() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <Link href="" legacyBehavior>
-              <a
-                className="btn btn-action text-center me-lg-5 m-2"
-              >
-                {/* Indonesia Participant{" "} */}
-                CLOSE REGIST{" "}
-                <i className="fa-solid fa-earth-americas"></i>
-              </a>
-            </Link>
-            <Link href="" legacyBehavior>
+            <Link href="registration/homeindo" legacyBehavior>
               <a className="btn btn-action text-center me-lg-5 m-2">
-                {/* International Participant{" "} */}
-                CLOSE REGIST{" "}
-                <i className="fa-solid fa-earth-americas"></i>
+                Indonesia Citizen{" "} <i className="fa-solid fa-earth-americas"></i>
+              </a>
+            </Link>
+            <Link href="registration/homeinter" legacyBehavior>
+              <a className="btn btn-action text-center me-lg-5 m-2">
+                International Citizen{" "} <i className="fa-solid fa-earth-americas"></i>
               </a>
             </Link>
             <br />
             <br />
-            <a href="https://IIIEX.or.id/">
+            <Link href="https://IIIEX.or.id/">
               <strong>back to main website</strong>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

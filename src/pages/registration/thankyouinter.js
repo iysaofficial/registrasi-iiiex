@@ -53,10 +53,8 @@ function Thankyouinter() {
             successful registration
           </strong>
         </p>
-        <Link href="/" >
-          <a className="btn btn-action">
-            Back to Registration Menu
-          </a>
+        <Link href="/" className="btn btn-action" >
+          Back to Registration Menu
         </Link>
       </div>
     </section>
