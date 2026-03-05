@@ -18,7 +18,7 @@ export default function Home() {
                 REGISTRATION FORM
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
-                Choose Categories Participant for Registration IIIEX 2025
+                Choose Categories Participant for Registration IIIEX 2026
               </h3>
             </div>
           </div>
